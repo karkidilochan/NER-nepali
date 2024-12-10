@@ -1,0 +1,28 @@
+2024-12-02 02:49:09,998 [INFO] A new study created in memory with name: no-name-b556efef-3bed-45e6-91fd-970e16266e6b
+2024-12-02 03:22:40,321 [INFO] Trial 0 finished with value: 0.6528835296630859 and parameters: {'learning_rate': 0.00025186271486450103, 'batch_size': 7, 'eval_batch_size': 3, 'n_epochs': 8}. Best is trial 0 with value: 0.6528835296630859.
+2024-12-02 03:43:43,853 [INFO] Trial 1 finished with value: 0.6463240385055542 and parameters: {'learning_rate': 0.0002461772298841855, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 5}. Best is trial 1 with value: 0.6463240385055542.
+2024-12-02 04:00:24,109 [INFO] Trial 2 finished with value: 0.6463529467582703 and parameters: {'learning_rate': 1.4282278057385093e-05, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 4}. Best is trial 1 with value: 0.6463240385055542.
+2024-12-02 04:36:31,305 [INFO] Trial 3 finished with value: 0.6459601521492004 and parameters: {'learning_rate': 5.327200299618758e-05, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 8}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 04:54:46,303 [INFO] Trial 4 finished with value: 0.654299259185791 and parameters: {'learning_rate': 0.00047759839292230985, 'batch_size': 3, 'eval_batch_size': 3, 'n_epochs': 3}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 05:26:27,418 [INFO] Trial 5 finished with value: 0.651019811630249 and parameters: {'learning_rate': 5.968246864930111e-05, 'batch_size': 5, 'eval_batch_size': 3, 'n_epochs': 7}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 05:47:06,379 [INFO] Trial 6 finished with value: 0.6486371159553528 and parameters: {'learning_rate': 1.4243674587726243e-05, 'batch_size': 7, 'eval_batch_size': 5, 'n_epochs': 5}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 06:03:31,510 [INFO] Trial 7 finished with value: 0.6509897112846375 and parameters: {'learning_rate': 7.156897773641081e-05, 'batch_size': 7, 'eval_batch_size': 3, 'n_epochs': 4}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 06:48:18,240 [INFO] Trial 8 finished with value: 0.6464670896530151 and parameters: {'learning_rate': 0.0002400603743461308, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 10}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 07:20:28,006 [INFO] Trial 9 finished with value: 0.6462491154670715 and parameters: {'learning_rate': 6.665827515529358e-05, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 7}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 08:22:27,730 [INFO] Trial 10 finished with value: 0.6493600010871887 and parameters: {'learning_rate': 3.424539522767296e-05, 'batch_size': 3, 'eval_batch_size': 5, 'n_epochs': 10}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 08:59:27,097 [INFO] Trial 11 finished with value: 0.6460506319999695 and parameters: {'learning_rate': 7.428014913860545e-05, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 8}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 09:36:27,668 [INFO] Trial 12 finished with value: 0.6464999914169312 and parameters: {'learning_rate': 3.191998361670174e-05, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 8}. Best is trial 3 with value: 0.6459601521492004.
+2024-12-02 10:17:47,751 [INFO] Trial 13 finished with value: 0.6455038785934448 and parameters: {'learning_rate': 0.00011961824051968824, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 9}. Best is trial 13 with value: 0.6455038785934448.
+2024-12-02 10:59:21,754 [INFO] Trial 14 finished with value: 0.6453665494918823 and parameters: {'learning_rate': 0.00013215894956588936, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 9}. Best is trial 14 with value: 0.6453665494918823.
+2024-12-02 11:39:45,502 [INFO] Trial 15 finished with value: 0.6454160809516907 and parameters: {'learning_rate': 0.00011972446789281136, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 9}. Best is trial 14 with value: 0.6453665494918823.
+2024-12-02 12:25:39,195 [INFO] Trial 16 finished with value: 0.6494149565696716 and parameters: {'learning_rate': 0.00014363589802457446, 'batch_size': 5, 'eval_batch_size': 5, 'n_epochs': 9}. Best is trial 14 with value: 0.6453665494918823.
+2024-12-02 13:19:55,770 [INFO] Trial 17 finished with value: 0.6470235586166382 and parameters: {'learning_rate': 0.0001320690599058488, 'batch_size': 3, 'eval_batch_size': 7, 'n_epochs': 9}. Best is trial 14 with value: 0.6453665494918823.
+2024-12-02 13:46:57,362 [INFO] Trial 18 finished with value: 0.656848132610321 and parameters: {'learning_rate': 0.0004267785852071708, 'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 6}. Best is trial 14 with value: 0.6453665494918823.
+2024-12-02 14:31:35,254 [INFO] Trial 19 finished with value: 0.6503286361694336 and parameters: {'learning_rate': 0.0001655770619793649, 'batch_size': 5, 'eval_batch_size': 5, 'n_epochs': 10}. Best is trial 14 with value: 0.6453665494918823.
+
+
+**********
+Best Trial Number: 14
+Lowest Loss: 0.6453665494918823
+Best Hyperparameters: {'learning_rate': 0.00013215894956588936, 
+'batch_size': 5, 'eval_batch_size': 7, 'n_epochs': 9}

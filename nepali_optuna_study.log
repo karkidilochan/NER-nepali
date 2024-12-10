@@ -1,0 +1,111 @@
+2024-12-01 01:58:27,444 [INFO] A new study created in memory with name: no-name-3402238f-69ae-4a11-b1ce-2fdd7c35100a
+2024-12-01 01:59:10,406 [WARNING] Trial 0 failed with parameters: {'learning_rate': 0.00022318685495412814, 'batch_size': 3, 'eval_batch_size': 3, 'n_epochs': 5} because of the following error: KeyboardInterrupt().
+Traceback (most recent call last):
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/dilochan/Documents/csu/nlp/project/train_nepali_bert.py", line 242, in objective
+    trainer.train()
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3004, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2958, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3975, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 4189, in evaluation_loop
+    labels = self.accelerator.pad_across_processes(labels, dim=1, pad_index=-100)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/accelerate/accelerator.py", line 2595, in pad_across_processes
+    return pad_across_processes(tensor, dim=dim, pad_index=pad_index, pad_first=pad_first)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/accelerate/utils/operations.py", line 412, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/accelerate/utils/operations.py", line 682, in pad_across_processes
+    return recursively_apply(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/accelerate/utils/operations.py", line 127, in recursively_apply
+    return func(data, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/accelerate/utils/operations.py", line 662, in _pad_across_processes
+    size = torch.tensor(tensor.shape, device=tensor.device)[None]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-12-01 01:59:10,410 [WARNING] Trial 0 failed with value None.
+2024-12-01 02:02:10,633 [INFO] A new study created in memory with name: no-name-e9b22467-e9e6-4343-ab4c-3576012dfc1b
+2024-12-01 02:05:36,909 [WARNING] Trial 0 failed with parameters: {'learning_rate': 0.00031074550726015773, 'batch_size': 5, 'eval_batch_size': 3, 'n_epochs': 7} because of the following error: ValueError('You appear to be using a legacy multi-label data representation. Sequence of sequences are no longer supported; use a binary array or sparse matrix instead - the MultiLabelBinarizer transformer can convert to this format.').
+Traceback (most recent call last):
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/dilochan/Documents/csu/nlp/project/train_nepali_bert.py", line 243, in objective
+    trainer.train()
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3004, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2958, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3975, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/transformers/trainer.py", line 4264, in evaluation_loop
+    metrics = self.compute_metrics(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/Documents/csu/nlp/project/train_nepali_bert.py", line 145, in compute_metrics
+    "accuracy": accuracy_score(true_labels, true_predictions),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 213, in accuracy_score
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 86, in _check_targets
+    type_true = type_of_target(y_true, input_name="y_true")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dilochan/anaconda3/lib/python3.12/site-packages/sklearn/utils/multiclass.py", line 353, in type_of_target
+    raise ValueError(
+ValueError: You appear to be using a legacy multi-label data representation. Sequence of sequences are no longer supported; use a binary array or sparse matrix instead - the MultiLabelBinarizer transformer can convert to this format.
+2024-12-01 02:05:36,915 [WARNING] Trial 0 failed with value None.
+2024-12-01 02:06:27,576 [INFO] A new study created in memory with name: no-name-e9f71934-57d2-44d0-8e54-9366e8701041
+2024-12-01 02:25:42,330 [INFO] Trial 0 finished with value: 0.11510608345270157 and parameters: {'learning_rate': 0.00017814495083196124, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 7}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 02:37:45,757 [INFO] Trial 1 finished with value: 0.1288014054298401 and parameters: {'learning_rate': 0.00013714059494804716, 'batch_size': 3, 'eval_batch_size': 7, 'n_epochs': 3}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 03:07:38,367 [INFO] Trial 2 finished with value: 0.15314674377441406 and parameters: {'learning_rate': 0.00022765221792519683, 'batch_size': 5, 'eval_batch_size': 5, 'n_epochs': 10}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 03:43:31,521 [INFO] Trial 3 finished with value: 0.20388399064540863 and parameters: {'learning_rate': 2.541121530027351e-05, 'batch_size': 3, 'eval_batch_size': 3, 'n_epochs': 9}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 04:13:36,870 [INFO] Trial 4 finished with value: 0.1641002595424652 and parameters: {'learning_rate': 0.00033355487374361935, 'batch_size': 5, 'eval_batch_size': 5, 'n_epochs': 10}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 04:41:26,841 [INFO] Trial 5 finished with value: 0.2001175582408905 and parameters: {'learning_rate': 1.4983940901808923e-05, 'batch_size': 3, 'eval_batch_size': 5, 'n_epochs': 7}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 05:21:02,953 [INFO] Trial 6 finished with value: 0.22733215987682343 and parameters: {'learning_rate': 7.352812540123707e-05, 'batch_size': 3, 'eval_batch_size': 5, 'n_epochs': 10}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 05:30:12,311 [INFO] Trial 7 finished with value: 0.2135026901960373 and parameters: {'learning_rate': 0.00016074620718287597, 'batch_size': 5, 'eval_batch_size': 3, 'n_epochs': 3}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 05:52:01,968 [INFO] Trial 8 finished with value: 0.2047736495733261 and parameters: {'learning_rate': 1.2693334716860999e-05, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 8}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 06:00:20,191 [INFO] Trial 9 finished with value: 0.2035718560218811 and parameters: {'learning_rate': 0.0001641144336669009, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 3}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 06:14:05,874 [INFO] Trial 10 finished with value: 0.1773863583803177 and parameters: {'learning_rate': 0.00048424483277592845, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 5}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 06:33:57,562 [INFO] Trial 11 finished with value: 0.22898954153060913 and parameters: {'learning_rate': 5.664920644436728e-05, 'batch_size': 3, 'eval_batch_size': 7, 'n_epochs': 5}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 06:47:43,846 [INFO] Trial 12 finished with value: 0.2231171578168869 and parameters: {'learning_rate': 8.407199401879848e-05, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 5}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 07:15:30,320 [INFO] Trial 13 finished with value: 0.2147972732782364 and parameters: {'learning_rate': 0.00011858027535407798, 'batch_size': 3, 'eval_batch_size': 7, 'n_epochs': 7}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 07:31:53,319 [INFO] Trial 14 finished with value: 0.22673119604587555 and parameters: {'learning_rate': 4.212446298959118e-05, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 6}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 07:42:49,307 [INFO] Trial 15 finished with value: 0.2123073935508728 and parameters: {'learning_rate': 0.00023313039052429044, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 4}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 08:14:50,620 [INFO] Trial 16 finished with value: 0.2333228588104248 and parameters: {'learning_rate': 0.00010998900085460817, 'batch_size': 3, 'eval_batch_size': 3, 'n_epochs': 8}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 08:36:44,837 [INFO] Trial 17 finished with value: 0.24730069935321808 and parameters: {'learning_rate': 4.251194886702342e-05, 'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 8}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 09:00:28,284 [INFO] Trial 18 finished with value: 0.6549843549728394 and parameters: {'learning_rate': 0.00032467201830968046, 'batch_size': 3, 'eval_batch_size': 7, 'n_epochs': 6}. Best is trial 0 with value: 0.11510608345270157.
+2024-12-01 09:12:42,314 [INFO] Trial 19 finished with value: 0.6502302885055542 and parameters: {'learning_rate': 0.0001510230894977601, 'batch_size': 5, 'eval_batch_size': 3, 'n_epochs': 4}. Best is trial 0 with value: 0.11510608345270157.
+
+
+**********
+Best Trial Number: 0
+Lowest Loss: 0.11510608345270157
+Best Hyperparameters: {'learning_rate': 0.00017814495083196124, 
+'batch_size': 7, 'eval_batch_size': 7, 'n_epochs': 7}
